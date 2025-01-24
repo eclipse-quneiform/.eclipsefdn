@@ -17,13 +17,6 @@ orgs.newOrg('technology.quneiform', 'eclipse-quneiform') {
       description: "Quneiform project website",
       web_commit_signoff_required: false,
     },
-   orgs.newRepo('quneiform') {
-      allow_merge_commit: true,
-      allow_update_branch: false,
-      delete_branch_on_merge: false,
-      description: "Quneiform project",
-      web_commit_signoff_required: false,
-    },
   ],
 } + {
   # snippet added due to 'https://github.com/EclipseFdn/otterdog-configs/blob/main/blueprints/add-dot-github-repo.yml'
