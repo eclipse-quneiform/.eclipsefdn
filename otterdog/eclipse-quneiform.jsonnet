@@ -17,6 +17,13 @@ orgs.newOrg('technology.quneiform', 'eclipse-quneiform') {
       description: "Quneiform project website",
       web_commit_signoff_required: false,
     },
+   orgs.newRepo('website-source') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Quneiform project website source",
+      web_commit_signoff_required: false,
+    },
    orgs.newRepo('quneiform') {
       allow_merge_commit: true,
       allow_update_branch: false,
