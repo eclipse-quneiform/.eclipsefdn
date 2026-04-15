@@ -9,6 +9,17 @@ orgs.newOrg('technology.quneiform', 'eclipse-quneiform') {
       actions_can_approve_pull_request_reviews: false,
     },
   },
+  secrets+: [
+    orgs.newOrgSecret('GPG_KEY_ID') {
+      value: "pass:bots/technology.quneiform/gpg/key_id",
+    },
+    orgs.newOrgSecret('GPG_PASSPHRASE') {
+      value: "pass:bots/technology.quneiform/gpg/passphrase",
+    },
+    orgs.newOrgSecret('GPG_PRIVATE_KEY') {
+      value: "pass:bots/technology.quneiform/gpg/secret-subkeys.asc",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('website') {
       allow_merge_commit: true,
